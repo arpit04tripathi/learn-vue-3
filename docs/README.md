@@ -6,6 +6,7 @@ Below are the steps to setup and create new repo
   - [Initialize this repo](#initialize-this-repo)
     - [nvm](#nvm)
     - [node](#node)
+    - [nvmrc](#nvmrc)
     - [npm create vue](#npm-create-vue)
 
 ## Initialize this repo
@@ -34,6 +35,14 @@ nvm use v20.15.1            # use specific installed version
 nvm current                 # current used node version
 npm --version               # version of npm
 nvm install-latest-npm      # latest npm for current node version
+```
+
+### nvmrc
+
+```shell
+node --version > .nvmrc     # create or update .nvmrc
+nvm current > .nvmrc        # create or update .nvmrc
+nvm use                     # user version from .nvmrc
 ```
 
 ### npm create vue
