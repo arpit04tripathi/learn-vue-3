@@ -43,4 +43,8 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Additional Docs
 
+- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
+- [vue 3](https://vuejs.org/guide/introduction)
+- [node js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+- [gh pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Create New and Setup](./docs/README.md)
