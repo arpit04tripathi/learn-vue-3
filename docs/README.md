@@ -9,6 +9,10 @@ Below are the steps to setup and create new repo
     - [nvmrc](#nvmrc)
     - [npm create vue](#npm-create-vue)
   - [Add bootstrap 5](#add-bootstrap-5)
+    - [install dependencies](#install-dependencies)
+    - [import bootstrap css](#import-bootstrap-css)
+    - [import bootstrap js](#import-bootstrap-js)
+    - [sass-migrator](#sass-migrator)
   - [Deploy vue.js app on github pages](#deploy-vuejs-app-on-github-pages)
 
 ## Initialize this repo
@@ -60,14 +64,16 @@ npm init vite@latest;
 
 ## Add bootstrap 5
 
-1. install dependencies - bootstrap, @popperjs/core and bootstrap-icons
-2. install dev dependencies - sass
-3. new file to import bootstrap - `assets/scss/styles.scss`
-4. import new file into `main.css`
-5. import bootstrap js into `main.ts`
-6. install `sass-migrator`
+1. install dependencies
+   1. bootstrap, @popperjs/core and bootstrap-icons
+   2. install dev dependencies - sass
+2. import bootstrap css
+   1. new file to import bootstrap - `assets/scss/styles.scss`
+   2. import new file into `main.css`
+3. import bootstrap js into `main.ts`
+4. install `sass-migrator`
 
-- install dependencies
+### install dependencies
 
 ```sh
 npm i bootstrap @popperjs/core bootstrap-icons
@@ -75,7 +81,9 @@ npm i sass --save-dev
 ./node_modules/.bin/sass --version
 ```
 
-- `assets/scss/styles.scss` : create this file and import bootstrap css as below
+### import bootstrap css
+
+`assets/scss/styles.scss` : create this file and import bootstrap css as below
 
 ```scss
 // Import Bootstrap
@@ -93,7 +101,7 @@ body {
 }
 ```
 
-- `main.css` : import `styles.scss` at the top of file
+`main.css` : import `styles.scss` at the top of file
 
 ```js
 /* to set the custom variable values */
@@ -102,14 +110,18 @@ body {
 @import './base.css';
 ```
 
-- `main.ts` : imports bootstrap js bundle after `main.css` import
+### import bootstrap js
+
+`main.ts` : imports bootstrap js bundle after `main.css` import
 
 ```js
 // import bootstrap js
 import 'bootstrap/dist/js/bootstrap.bundle'
 ```
 
-- `sass-migrator` : if sass version < 3
+### sass-migrator
+
+`sass-migrator` : if sass version < 3
 
 ```bash
 # Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
