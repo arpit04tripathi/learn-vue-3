@@ -60,6 +60,13 @@ npm init vite@latest;
 
 ## Add bootstrap 5
 
+1. install dependencies - bootstrap, @popperjs/core and bootstrap-icons
+2. install dev dependencies - sass
+3. new file to import bootstrap - `assets/scss/styles.scss`
+4. import new file into `main.css`
+5. import bootstrap js into `main.ts`
+6. install `sass-migrator`
+
 - install dependencies
 
 ```sh
@@ -89,16 +96,20 @@ body {
 - `main.css` : import `styles.scss` at the top of file
 
 ```js
+/* to set the custom variable values */
 @import './scss/styles.scss';
+/* use updated values imported from above */
+@import './base.css';
 ```
 
-- `main.js` : imports bootstrap js bundle after `main.css` import
+- `main.ts` : imports bootstrap js bundle after `main.css` import
 
 ```js
 // import bootstrap js
 import 'bootstrap/dist/js/bootstrap.bundle'
 ```
 
+- `sass-migrator`
 
 ```bash
 # Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
