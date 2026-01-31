@@ -129,7 +129,7 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 #   ╷
 # 2 │ @import 'bootstrap/scss/bootstrap';
 
-npm i sass-migrator --dev
+npm i sass-migrator --save-dev
 ./node_modules/.bin/sass-migrator --version
 ```
 
