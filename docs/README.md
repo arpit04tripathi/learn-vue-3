@@ -109,7 +109,7 @@ body {
 import 'bootstrap/dist/js/bootstrap.bundle'
 ```
 
-- `sass-migrator`
+- `sass-migrator` : if sass version < 3
 
 ```bash
 # Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
