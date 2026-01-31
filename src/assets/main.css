@@ -1,3 +1,6 @@
+/* to set the custom variable values */
+@import './scss/styles.scss';
+/* use updated values imported from above */
 @import './base.css';
 
 #app {
